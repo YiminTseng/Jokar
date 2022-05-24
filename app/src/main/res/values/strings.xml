@@ -11,4 +11,12 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="user_name">user name</string>
+    <string name="ka">KA</string>
+    <string name="jo">JO</string>
+    <string name="join_joka">Not join JOKA yet?</string>
 </resources>

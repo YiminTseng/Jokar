@@ -2,40 +2,104 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginFragment"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LoginFragment">
 
-    <LinearLayout
-        android:id="@+id/tvJoka"
-        android:layout_marginTop="100dp"
+        <LinearLayout
+            android:id="@+id/tvJoka"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:id="@+id/tvAppNameJo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/jo"
+                android:textColor="#FFC600"
+                android:background="#1E96FC"
+                android:textSize="90sp" />
+
+            <TextView
+                android:id="@+id/tvAppNameKa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/ka"
+                android:background="#FFC600"
+                android:textColor="#1E96FC"
+                android:textSize="90sp" />
+        </LinearLayout>
+
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/login"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <TextView
-            android:id="@+id/tvAppNameJo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="end"
-            android:text="Jo"
-            android:layout_marginEnd="5dp"
-            android:textColor="#FFC600"
-            android:textSize="90sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/tvAppNameKa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start"
-            android:layout_marginStart="5dp"
-            android:text="Ka"
-            android:textColor="#1E96FC"
-            android:textSize="90sp" />
-    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnToRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/join_joka"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
 
 </LinearLayout>
