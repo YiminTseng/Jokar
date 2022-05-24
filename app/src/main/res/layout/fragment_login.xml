@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginFragment"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/tvJoka"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvAppNameJo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Jo"
+            android:layout_marginEnd="5dp"
+            android:textColor="#FFC600"
+            android:textSize="90sp" />
+
+        <TextView
+            android:id="@+id/tvAppNameKa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:layout_marginStart="5dp"
+            android:text="Ka"
+            android:textColor="#1E96FC"
+            android:textSize="90sp" />
+    </LinearLayout>
 
 
 </LinearLayout>
